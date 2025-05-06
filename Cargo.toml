@@ -1,0 +1,15 @@
+[package]
+name = "tls-friend"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+tokio = { version = "1.45", features = ["fs", "net", "io-util"] }
+tracing = "0.1"
+
+tokio-rustls = "0.26"
+rustls = { version = "0.23", features = ["aws_lc_rs"] }
+rustls-pemfile = "2.2"
+
+[dev-dependencies]
+tokio = { version = "1.45", features = ["full"] }
