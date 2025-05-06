@@ -2,6 +2,9 @@
 name = "tls-friend"
 version = "0.1.0"
 edition = "2021"
+description = "A friendly library to make dealing with TLS easier"
+repository = "https://github.com/Developed-Methods/tls-friend"
+license = "MIT"
 
 [dependencies]
 tokio = { version = "1.45", features = ["fs", "net", "io-util"] }
