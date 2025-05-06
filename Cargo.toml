@@ -1,13 +1,13 @@
 [package]
 name = "tls-friend"
-version = "0.1.0"
+version = "0.1.1"
 edition = "2021"
 description = "A friendly library to make dealing with TLS easier"
 repository = "https://github.com/Developed-Methods/tls-friend"
 license = "MIT"
 
 [dependencies]
-tokio = { version = "1.45", features = ["fs", "net", "io-util"] }
+tokio = { version = "1", features = ["fs", "net", "io-util"] }
 tracing = "0.1"
 
 tokio-rustls = "0.26"
@@ -15,4 +15,4 @@ rustls = { version = "0.23", features = ["aws_lc_rs"] }
 rustls-pemfile = "2.2"
 
 [dev-dependencies]
-tokio = { version = "1.45", features = ["full"] }
+tokio = { version = "1", features = ["full"] }
